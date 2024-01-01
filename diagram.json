@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "Nelson Molina Aguiar",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -90,
+      "left": 100.2,
+      "attrs": { "color": "red", "flip": "1" }
+    }
+  ],
+  "connections": [
+    [ "led1:A", "uno:2", "green", [ "v19.2", "h121.3" ] ],
+    [ "uno:GND.1", "led1:C", "black", [ "v-28.2", "h9.3" ] ]
+  ],
+  "dependencies": {}
+}
